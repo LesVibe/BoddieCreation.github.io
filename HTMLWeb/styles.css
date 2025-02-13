@@ -1,0 +1,174 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Overall container */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style for the fixed top bar */
+.top-bar {
+    position: fixed; /* Fixes the bar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    height: 70px; /* Set the height of the top bar */
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: space-between; /* Align elements horizontally */
+    align-items: center; /* Vertically center the items */
+    padding: 0 20px; /* Padding to give space around elements */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.top-bar h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem;
+}
+
+.top-bar nav {
+    display: flex;
+    gap: 15px; /* Space between navigation links */
+}
+
+.top-bar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.top-bar nav a:hover {
+    font-size: 1.25rem;
+}
+
+.models {
+    display: flex;  /* Aligns images in a row */
+    justify-content: space-between; /* Space out the images */
+    gap: 20px; /* Add spacing between images */
+    flex-wrap: wrap; /* Allow images to wrap to the next line if the container is too small */
+    margin-top: 40px; /* Optional: add some space above */
+    margin-left: 20px;
+    margin-right: 20px;
+    scroll-margin-top: 200px;
+}
+.models img {
+    width: 600px;  /* Adjust the width of the images */
+    height: auto;  /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    object-fit: cover; /* Makes the image cover the container space */
+}
+
+h1 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 40px; /* Make it take full viewport height */
+    margin-top: 100px;
+    font-size: 3rem;
+}
+
+.about {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Centers them vertically */
+    gap: 20px; /* Adds space between the image and text */
+    max-width: 1300px; /* Optional: Set a max width for the section */
+    margin: 50px auto; /* Centers the div on the page */
+    scroll-margin-top: 400px;
+}
+
+.about img {
+    width: 450px; /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.about p {
+    flex: 1; /* Allows text to take up remaining space */
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 100px;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form button {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.contact-section p {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 40px; /* Make it take full viewport height */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+
+
